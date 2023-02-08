@@ -1,13 +1,17 @@
-<div>
+<div class="notice">
   <%= flash[:notice] %>
 </div>
 
 <%= form_with model: @book do |f| %>
-  <p>Title:</p>
-  <p><%= @book.title %></p>
+  <p>
+    <strong>Title:</strong>
+    <%= @book.title %>
+  </p>
 
-  </p>Body:</p>
-  <p><%= @book.body %></p>
+  <p>
+    <strong>Body:</strong>
+    <%= @book.body %>
+  </p>
 
 <% end %>
 
